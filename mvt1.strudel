@@ -1,0 +1,6 @@
+// m7-8 piccolo solo
+setcps(90/120)
+note("<[g7 c8 g7 c8] g7 ~ f7 g7 c8@2>")
+    .s("gm_flute")
+
+// m9-13 french horn solo
