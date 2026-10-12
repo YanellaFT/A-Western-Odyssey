@@ -1,6 +1,14 @@
-// m7-8 piccolo solo
-setcps(90/120)
-note("<[g7 c8 g7 c8] g7 ~ f7 g7 c8@2>")
-    .s("gm_flute")
+setcps(100/120)
 
+// m7-8 piccolo solo
+let m7_8 = note("<[g7 c8 g7 c8] g7 ~ f7 g7 c8@2>")
+    .s("gm_flute")
+    
 // m9-13 french horn solo
+let m9_13 = note("<d4 a4@2 g4 c5@2 d4 a4@1.5 a4@0.5 g4 e4@2>")
+    .s("gm_french_horn")
+
+arrange(
+  [6, m7_8],
+  [11, m9_13]
+)
