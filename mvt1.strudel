@@ -68,10 +68,42 @@ let m18_22 = stack(
         .s("gm_tuba"),
 );
 
+//m22-26
+let m22_26 = stack(
+    note("<~ c6 g6@1.5 g6@0.5 [f6 eb6] d6@2 bb5 c6@1.5 [bb5 c6]@0.5 d6@1.5 [c6 d6]@0.5 eb6 f6@2 [c6 d6 eb6 f6]>")
+        .s("gm_flute"),
+    note("<~ c5 g5@1.5 g5@0.5 [f5 eb5] d5@2 bb4 c5@1.5 [bb4 c5]@0.5 d5@1.5 [c5 d5]@0.5 eb5 f5@2 [c5 d5 eb5 f5]>")
+        .s("gm_clarinet"),
+    note("<~ c5 g4@1.5 g4@0.5 [f4 eb4] d4@2 bb3 c4@1.5 [bb3 c4]@0.5 d4@1.5 [c4 d4]@0.5 eb4 f4@2 [c4 d4 eb4 f4]>")
+        .s("gm_clarinet"),
+    note("<~ ~ [g3 f3] [eb3 d3] f3@3 f3 eb3@2 f3@2 g3@2 bb3@2>")
+        .s("gm_alto_sax"),
+    note("<c3@0.75 g3@0.25 g3@3 c3@3 c3 ab3@4 f3@3 [g3 a3 bb3 b3]>")
+        .s("gm_tenor_sax"),
+    note("<c3@0.75 bb2@0.25 eb2@2 c3 bb2@1.5 f2@0.5 bb2 bb2 ab2@2 eb2 ab2 bb2@2 g2 f2>")
+        .s("gm_baritone_sax"),
+    note("<~ c4 [g4 f4] [eb4 d4] c4 d4@2 bb3 c4@1.5 [bb3 c4]@0.5 d4@1.5 [c4 d4]@0.5 eb4 f4@2 [c4 d4 eb4 f4]>")
+        .s("gm_trumpet"),
+    note("<~ c3 [g3 f3] [eb3 d3] c3 d3@2 bb2 c3@1.5 [bb2 c3]@0.5 d3@1.5 [c3 d3]@0.5 eb3 f3@2 [c3 d3 eb3 f3]>")
+        .s("gm_trumpet"),
+    note("<~ ~ [g3 f3] [eb3 d3] c3@3 c3 eb3@2 f3@2 g3@2 bb3@2>")
+        .s("gm_french_horn"),
+    note("<~ ~ [g3 f3] [eb3 d3] c3@3 c3 eb3@2 f3@2 g3@2 bb2@2>")
+        .s("gm_french_horn"),
+    note("<c4@0.75 g3@0.25 g3@3 f3@3 f3 c4@4 d4@3 [g3 a3 bb3 b3]>")
+        .s("gm_french_horn"), //euph lb 1
+    note("<c4@0.75 g3@0.25 eb3@3 c4@3 c4 eb3@4 f3@3 [g3 a3 bb3 b3]>")
+        .s("gm_trombone"),
+    note("<c2@0.75 g2@0.25 c1@2 c2 bb2@1.5 f2@0.5 bb2 bb2 ab2@2 eb2 ab2 bb2@2 g2 f2>")
+        .s("gm_tuba"),
+
+);
+
 
 arrange(
     [7, m7_8],
     [16, m9_13],
     [21, m13_18],
-    [16, m18_22]
+    [16, m18_22],
+    [16, m22_26]
 );
