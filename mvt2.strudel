@@ -264,7 +264,7 @@ let mK = stack(
         .s("gm_french_horn").transpose(-7),
     note("<a3@8 ~@8>")
         .s("gm_french_horn").transpose(-7),
-    note("<d3@8 g2@8>")
+    note("<g3@8 g2@8>")
         .s("gm_french_horn"), //lb1
     note("<g3@8 g2@8>")
         .s("gm_trombone"),
@@ -273,15 +273,15 @@ let mK = stack(
 ).gain("<0.75@4 0.75@4 0.5@4 0.25@4>");
 
 arrange(
-    [16, mA],
-    [16, mB],
-    [16, mC],
-    [16, mD],
-    [16, mE],
-    [28, mF],
-    [40, mG],
-    [24, mH],
-    [16, mI],
+    // [16, mA],
+    // [16, mB],
+    // [16, mC],
+    // [16, mD],
+    // [16, mE],
+    // [28, mF],
+    // [40, mG],
+    // [24, mH],
+    // [16, mI],
     [28, mJ],
     [16, mK]
 );
