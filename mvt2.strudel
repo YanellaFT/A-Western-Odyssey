@@ -222,6 +222,35 @@ let mI = stack(
         .s("gm_tuba")
 );  
 
+let mJ = stack(
+    note("<g5@2 d6@6 g5 ~@0.5 g5@0.5 ~@0.5 f5@0.5 g5 ~@0.5 g5@0.5 ~@0.5 f5@0.5 [g5 a5] [bb5 c6] d6@8 ~@4>")
+        .s("gm_flute"),
+    note("<g5@8 g5 ~@0.5 g5@0.5 ~@0.5 f5@0.5 g5 ~@0.5 g5@0.5 ~@0.5 f5@0.5 [g5 a5] [bb5 c6] a5@8 ~@4>")
+        .s("gm_flute").gain(0.5),
+    note("<a4@2 e5@6 a5 ~@0.5 a5@0.5 ~@0.5 g5@0.5 a5 ~@0.5 a4@0.5 ~@0.5 g4@0.5 [a4 b4] [c5 d5] e5@8 ~@4>")
+        .s("gm_clarinet").transpose(-2),
+    note("<a4@8 a5 ~@0.5 a5@0.5 ~@0.5 g5@0.5 a5 ~@0.5 a4@0.5 ~@0.5 g4@0.5 [a4 b4] [c5 d5] b4@8 ~@4>")
+        .s("gm_clarinet").transpose(-2).gain(0.5),
+    note("<e4@3 e4 f#4@4 e4 [~ e4] [~ d4] e4 [~ e4] [~ d4] [e4 f#4] [g4 a4] ~ ~ f#4@2 eb4@4 ~@4>")
+        .s("gm_alto_sax").transpose(-9),
+    note("<a3@8 a3 [~ a3] [~ g3] a3 [~ a3] [~ g3] [a3 b3] [c4 d4] a3@4 ab3@4 ~@4>")
+        .s("gm_tenor_sax").transpose(-14),
+    note("<e4@8 e4 [~ e4] [~ d4] e4 [~ e4] [~ d4] [e4 f#4] [g4 a4] b4@4 b3@4 ~@4>")
+        .s("gm_baritone_sax").transpose(-21),
+    note("<a4@2 e5@6 a4 ~@0.5 a4@0.5 ~@0.5 g4@0.5 a4 ~@0.5 a4@0.5 ~@0.5 g4@0.5 [a4 b4] [c5 d5] e5@4 ab5@4 ~@4>")
+        .s("gm_trumpet").transpose(-2),
+    note("<a4@8 a4 ~@0.5 a4@0.5 ~@0.5 g4@0.5 a4 ~@0.5 a4@0.5 ~@0.5 g4@0.5 [a4 b4] [c5 d5] a4@4 e5@4 ~@4>")
+        .s("gm_trumpet").transpose(-2).gain(0.5),
+    note("<d4@3 d e4@4 d3 [~ d3] [~ c3] d3 [~ d3] [~ c3] [d3 e3] [f3 g3] ~ ~ e4@2 db@4 ~@4>")
+        .s("gm_french_horn").transpose(-7),
+    note("<g3@2 d4@6 g3 [~ g3] [~ f3] g3 [~ g3] [~ f3] [g3 a3] [bb3 c4] a3@4 a3@4 ~@4>")
+        .s("gm_french_horn"), //lb 1
+    note("<g3@8 g3 ~@0.5 g3@0.5 ~@0.5 f3@0.5 g3 ~@0.5 g3@0.5 ~@0.5 f3@0.5 [g3 a3] [bb3 c4] g3@4 gb3@4 ~@4>")
+        .s("gm_trombone"),
+    note("<g2@8 g2 ~@0.5 g2@0.5 ~@0.5 f2@0.5 g2 ~@0.5 g2@0.5 ~@0.5 f2@0.5 [g2 a2] [bb2 c3] d3@4 d2@4 ~@4>")
+        .s("gm_tuba")
+);
+
 arrange(
     [16, mA],
     [16, mB],
@@ -232,4 +261,5 @@ arrange(
     [40, mG],
     [24, mH],
     [16, mI],
+    [28, mJ],
 );
