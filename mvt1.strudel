@@ -1,4 +1,4 @@
-setcps(120/120);
+setcps(130/120);
 
 // m7-8 piccolo solo
 let m7_8 = note("<[g7 c8 g7 c8] g7@1.5 ~@0.5 f7 g7 c8@3>")
@@ -16,9 +16,9 @@ let m13_18 = stack(
         .s("gm_clarinet"),
     note("<~@18 b3 g3@2>")
         .s("gm_alto_sax"),
-    note("<~ c3@4 bb3@4 g2@4 g2@4 ~ f#3 g3@2>")
+    note("<~ c3@4 bb2@4 g2@4 g2@4 ~ f#3 g3@2>")
         .s("gm_tenor_sax"),
-    note("<~ eb2@2 c2@2 bb2@4 ab2@4 g2@4 g2@4>")
+    note("<~ eb2@2 c3@2 bb2@4 ab2@4 g2@4 g2@4>")
         .s("gm_baritone_sax"),
     note("<[d4 bf3] c4 g4@3 f4 bf3@3 g4@3.5 [g4 f4]@0.5 g4@4 b2@4>")
         .s("gm_trumpet"),
@@ -32,7 +32,7 @@ let m13_18 = stack(
         .s("gm_french_horn"), //euph lb 1
     note("<~ g2@4 f2@4 eb2@4 d2@4 b2@4>")
         .s("gm_trombone"),
-    note("<~ c1@2 c2@2 bb2@4 ab2@4 g2@4 g2@4>")
+    note("<~ c1@2 c2@2 bb1@4 ab1@4 g1@4 g1@4>")
         .s("gm_tuba"),
     note("<~@17 g0@4>")
         .s("gm_tuba"),
@@ -66,7 +66,7 @@ let m18_22 = stack(
         .s("gm_trombone"),
     note("<c3@1.75 c3@0.25 c3 [g3 f3] eb3@3 eb3 ab3@3 [ab3 g3 f#3]f3@3 [g3 bb3]>")
         .s("gm_tuba"),
-);
+).gain(0.8);
 
 //m22-26
 let m22_26 = stack(
@@ -97,7 +97,7 @@ let m22_26 = stack(
     note("<c2@0.75 g2@0.25 c1@2 c2 bb2@1.5 f2@0.5 bb2 bb2 ab2@2 eb2 ab2 bb2@2 g2 f2>")
         .s("gm_tuba"),
 
-);
+).gain(1.5);
 
 //m26-28
 let m26_28 = stack(
@@ -129,7 +129,7 @@ let m26_28 = stack(
         .s("gm_trombone"),
     note("<~@4 db3@4 c3@4>")
         .s("gm_tuba")
-);
+).gain(2.25);
 
 
 arrange(
