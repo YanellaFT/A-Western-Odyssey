@@ -251,6 +251,27 @@ let mJ = stack(
         .s("gm_tuba")
 );
 
+let mK = stack(
+    note("<e3@8 ~@8>")
+        .s("gm_alto_sax").transpose(-9),
+    note("<b3@8 ~@8>")
+        .s("gm_alto_sax").transpose(-9),
+    note("<a3@8 ~@8>")
+        .s("gm_tenor_sax").transpose(-14),
+    note("<e4@8 e4@8>")
+        .s("gm_baritone_sax").transpose(-21),
+    note("<d3@8 ~@8>")
+        .s("gm_french_horn").transpose(-7),
+    note("<a3@8 ~@8>")
+        .s("gm_french_horn").transpose(-7),
+    note("<d3@8 g2@8>")
+        .s("gm_french_horn"), //lb1
+    note("<g3@8 g2@8>")
+        .s("gm_trombone"),
+    note("<g2@8 g1@8>")  
+        .s("gm_tuba")
+).gain("<0.75@4 0.75@4 0.5@4 0.25@4>");
+
 arrange(
     [16, mA],
     [16, mB],
@@ -262,4 +283,5 @@ arrange(
     [24, mH],
     [16, mI],
     [28, mJ],
+    [16, mK]
 );
